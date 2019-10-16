@@ -1,23 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import tw from 'tailwind.macro';
+import 'styled-components/macro';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div css={tw`flex min-h-screen items-center justify-center`}>
+      <header css={tw`text-center`}>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
